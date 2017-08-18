@@ -1,0 +1,61 @@
+/* navigation styling */
+
+* {
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  height: 75px;
+  background-color: #4791c7;
+}
+
+.logo {
+  height: 65px;
+  width: auto;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+
+.cart {
+  width: 200px;
+  float: right;
+  height: 60px;
+  padding-top: 15px;
+}
+
+.cart:hover {
+  background-color: #9fd0f4;
+}
+
+.cart_icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  padding: 5px;
+  padding-right: 10px;
+}
+
+.cart_text {
+  height: 40px;
+  float: left;
+  font-size: 17px;
+  color: white;
+}
+
+.cart_info {
+  visibility: hidden;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: #9fd0f4;
+}
+
+.cart:hover .cart_info {
+  visibility: visible;
+}
