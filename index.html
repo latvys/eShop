@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>eShop</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <nav>
     <a href=""><img src="images/logo-small.png" alt="logo" class="logo"></a>
     <div class="cart">
-        <img src="images\cart-icon.svg" alt="" class="cart_icon">
-        <span class="cart_text">Shopping<br>cart</span>
-        <div class="cart_info"></div>
+      <img src="images\cart-icon.svg" alt="" class="cart__icon">
+      <span class="cart__text">Shopping<br>cart</span>
+      <div class="cart__info cart__info--hidden">No items currently added</div>
     </div>
   </nav>
 
+  <div class="container item clear">
+    <h3 class="item__title">Razer DeathAdder Elite - Multi-Color Ergonomic Gaming Mouse</h3>
+    <div class="item__image">
+      <div class="item__image__full">
+        <img src="images\item_image_1.png" alt="">
+      </div>
+      <div class="item__image__thumbnails clear">
+        <div class="item__image__thumb 1">
+          <img src="images\item_image_1.png" alt="">
+        </div>
+        <div class="item__image__thumb 2"></div>
+        <div class="item__image__thumb 3"></div>
+      </div>
+    </div>
+    <div class="item__info">
+      <h2 class="item__info__price">€ 49.99</h2>
+      <h3 class="item__info__price__old">€ 69.99</h3>
+      <a class="button" href="#">Add to cart</a>
+      <p class="item__info__description">
+        Target enemies faster with this Razer DeathAdder Elite gaming mouse. Its 16,000 dpi optical sensor provides faster moving
+        speeds, letting you move at different angles with more accuracy, and the customizable Chroma lighting settings let
+        you choose the right color to suit your gaming situation. Battle enemies in comfort with the ergonomic shape and
+        rubber grips of this Razer DeathAdder Elite gaming mouse.
+      </p>
+      <ul class="item__info__specs">
+        <li>Perfectly designed to fit snugly under your palm, the ergonomic shape of the Razer DeathAdder Elite gives gamers the most comfortable gaming experience ever, especially during the most testing of battles</li>
+        <li>The Razer DeathAdder Elite is equipped with a 16,000dpi optical sensor. It is capable of mouse movement speeds of up to 450 inches per second with 99.4% resolution accuracy</li>
+        <li>Gaming-optimized Razer mechanical mouse switches - durable up to 50 million clicks. DPI buttons at your fingertips and Razer Chroma customizable lighting</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <h4>Copyright &copy 2017 <a href="https://github.com/latvys">Vytautas Latvys</a>. All rights reserved. </h4>
+  </footer>
+
   <script href="script.js"></script>
 </body>
+
 </html>
