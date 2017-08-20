@@ -1,5 +1,8 @@
 let itemsAdded = 0;
 let imageIndex = 1;
+let cartItems = document.getElementById("cart__items");
+let noItems = document.getElementById("cart__info__none");
+let cartTable = document.getElementById("cart__table");
 
 setTimeout(function () {
 	document.body.className = "";
@@ -35,24 +38,14 @@ function showImage(n) {
 
 function addItem() {
 	itemsAdded = 1;
-	let cartItems = document.getElementById("cart__items");
 	cartItems.innerHTML = itemsAdded;
-
-	let noItems = document.getElementById("cart__info__none");
 	noItems.className = noItems.className.replace(" cart__info__none--visible", "")
-
-	let cartTable = document.getElementById("cart__table");
 	cartTable.className = cartTable.className += " table--visible";
 }
 
 function removeItem() {
 	itemsAdded = 0;
-	let cartItems = document.getElementById("cart__items");
 	cartItems.innerHTML = itemsAdded;
-
-	let noItems = document.getElementById("cart__info__none");
 	noItems.className = noItems.className += " cart__info__none--visible";
-
-	let cartTable = document.getElementById("cart__table");
 	cartTable.className = cartTable.className.replace(" table--visible", "");
 }
