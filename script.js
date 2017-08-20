@@ -1,10 +1,10 @@
 let itemsAdded = 0;
+let imageIndex = 1;
 
 setTimeout(function () {
 	document.body.className = "";
 }, 500)
 
-let imageIndex = 1;
 showImage(imageIndex);
 
 function addImageIndex(n) {
