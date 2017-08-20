@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="preload">
   <nav>
     <a href=""><img src="images/logo-small.png" alt="logo" class="logo"></a>
     <div class="cart">
@@ -24,14 +24,20 @@
     <h3 class="item__title">Razer DeathAdder Elite - Multi-Color Ergonomic Gaming Mouse</h3>
     <div class="item__image">
       <div class="item__image__full">
-        <img src="images\item_image_3.jpg" alt="">
+        <img class="item__image__full__main" src="images\item_image_3.jpg" alt="">
+        <img class="item__image__full__arrow item__image__full__arrow--left" src="images\arrow_left.png" alt="">
+        <img class="item__image__full__arrow item__image__full__arrow--right" src="images\arrow_right.png" alt="">
       </div>
       <div class="item__image__thumbnails clear">
         <div class="item__image__thumb 1">
-          <img src="images\item_image_1.png" alt="">
+          <img src="images\item_image_s_1.jpg" alt="">
         </div>
-        <div class="item__image__thumb 2"></div>
-        <div class="item__image__thumb 3"></div>
+        <div class="item__image__thumb 2">
+            <img src="images\item_image_s_2.jpg" alt="">
+        </div>
+        <div class="item__image__thumb 3">
+            <img src="images\item_image_s_3.jpg" alt="">
+        </div>
       </div>
     </div>
     <div class="item__info">
@@ -56,7 +62,7 @@
     <h4>Copyright &copy 2017 <a href="https://github.com/latvys">Vytautas Latvys</a>. All rights reserved. </h4>
   </footer>
 
-  <script href="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
